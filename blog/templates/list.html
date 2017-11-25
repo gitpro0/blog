@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+	{%for obj in query%}
+                <a href="{{ obj.get_url }}">{{obj.title}}</a> <br>
+                {{obj.content}} <br>
+                {{obj.puplish}} <br>
+                {{ob.id}} <br> <hr>
+        {%endfor%}
+{% endblock %}
